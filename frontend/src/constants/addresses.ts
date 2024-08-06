@@ -21,8 +21,8 @@ const _addresses: { [chainId: number]: { [key: string]: string } } = {
     DUEL3NFTAlpha: "0x198051a895fcd3678b8605508c1c51ec75cf5755",
   },
   [arbitrum.id]: {
-    DUEL3BattleAlpha: "0x473bf1b585808f1c7eef20288ed315c98a779e33",
-    DUEL3NFTAlpha: "0xbf48fbb9fd7162054c281ad0283ca196e21938eb",
+    DUEL3BattleAlpha: "0x4fe3fc701504ac72bff774e42e78fb349607de56",
+    DUEL3NFTAlpha: "0x053cb170062bb18a0071aceea923fa377b8bc321",
   },
 };
 

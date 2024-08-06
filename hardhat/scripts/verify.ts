@@ -2,8 +2,8 @@ import hre from "hardhat";
 
 async function main() {
   const signer = "0x6C4502B639ab01Cb499cEcCA7D84EB21Fde928F8";
-  const DUEL3Alpha = "0x3e213fbacd7f6369f63603cac81ed9704b5a74d3";
-  const DUEL3NFTAlpha = "0x198051a895fcd3678b8605508c1c51ec75cf5755";
+  const DUEL3Alpha = "0x4fe3fc701504ac72bff774e42e78fb349607de56";
+  const DUEL3NFTAlpha = "0x053cb170062bb18a0071aceea923fa377b8bc321";
 
   await hre.run("verify:verify", {
     address: DUEL3Alpha,
