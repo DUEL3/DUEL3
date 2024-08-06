@@ -38,7 +38,7 @@ For more details, please check the article below:
 
 Deep Dive into the Hybrid Game https://paragraph.xyz/@duel3/deep-dive-into-hybrid-game
 
-## Contract addresses(base sepolia)
+## Contract addresses
 
 DUEL3 battle
 
