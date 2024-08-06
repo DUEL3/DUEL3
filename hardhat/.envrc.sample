@@ -1,0 +1,4 @@
+layout node
+export PRIVATE_KEY=0x
+export ETHERSCAN_API_KEY=
+export ETHERSCAN_API_KEY_ARB=

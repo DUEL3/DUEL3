@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #06330d;
+    /* font-family: "Alkatra", cursive; */
+    color: white;
+    font-family: "Londrina Solid";
+    /* background-image: url(/images/common/manhattan.png);
+    background-size: "cover";
+    background-position: "center";
+    background-color: "rgba(255, 255, 255, 0.1)";
+    height: "100vh"; */
+  }
+}

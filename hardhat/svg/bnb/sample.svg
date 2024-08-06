@@ -1,0 +1,46 @@
+<svg width="320" height="320" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <style type="text/css">
+    @import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900");
+ </style></defs>
+<rect width="100%" height="100%" fill="#FF7A00" />
+<rect width="60" height="10" x="100" y="110" fill="#ffef16"/>
+<rect width="60" height="10" x="170" y="110" fill="#ffef16"/>
+<rect width="10" height="10" x="100" y="120" fill="#ffef16"/>
+<rect width="20" height="10" x="110" y="120" fill="#ffffff"/>
+<rect width="20" height="10" x="130" y="120" fill="#000000"/>
+<rect width="10" height="10" x="150" y="120" fill="#ffef16"/>
+<rect width="10" height="10" x="170" y="120" fill="#ffef16"/>
+<rect width="20" height="10" x="180" y="120" fill="#ffffff"/>
+<rect width="20" height="10" x="200" y="120" fill="#000000"/>
+<rect width="10" height="10" x="220" y="120" fill="#ffef16"/>
+<rect width="40" height="10" x="70" y="130" fill="#ffef16"/>
+<rect width="20" height="10" x="110" y="130" fill="#ffffff"/>
+<rect width="20" height="10" x="130" y="130" fill="#000000"/>
+<rect width="30" height="10" x="150" y="130" fill="#ffef16"/>
+<rect width="20" height="10" x="180" y="130" fill="#ffffff"/>
+<rect width="20" height="10" x="200" y="130" fill="#000000"/>
+<rect width="10" height="10" x="220" y="130" fill="#ffef16"/>
+<rect width="10" height="10" x="70" y="140" fill="#ffef16"/>
+<rect width="10" height="10" x="100" y="140" fill="#ffef16"/>
+<rect width="20" height="10" x="110" y="140" fill="#ffffff"/>
+<rect width="20" height="10" x="130" y="140" fill="#000000"/>
+<rect width="10" height="10" x="150" y="140" fill="#ffef16"/>
+<rect width="10" height="10" x="170" y="140" fill="#ffef16"/>
+<rect width="20" height="10" x="180" y="140" fill="#ffffff"/>
+<rect width="20" height="10" x="200" y="140" fill="#000000"/>
+<rect width="10" height="10" x="220" y="140" fill="#ffef16"/>
+<rect width="10" height="10" x="70" y="150" fill="#ffef16"/>
+<rect width="10" height="10" x="100" y="150" fill="#ffef16"/>
+<rect width="20" height="10" x="110" y="150" fill="#ffffff"/>
+<rect width="20" height="10" x="130" y="150" fill="#000000"/>
+<rect width="10" height="10" x="150" y="150" fill="#ffef16"/>
+<rect width="10" height="10" x="170" y="150" fill="#ffef16"/>
+<rect width="20" height="10" x="180" y="150" fill="#ffffff"/>
+<rect width="20" height="10" x="200" y="150" fill="#000000"/>
+<rect width="10" height="10" x="220" y="150" fill="#ffef16"/>
+<rect width="60" height="10" x="100" y="160" fill="#ffef16"/>
+<rect width="60" height="10" x="170" y="160" fill="#ffef16"/>
+<text x="150" y="220" font-size="16" fill="#fff" text-anchor="middle" style="font-family: 'Londrina Solid';">PlasmaAutoBattle #1</text>
+</svg>
+
