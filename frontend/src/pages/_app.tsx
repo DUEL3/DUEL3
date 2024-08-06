@@ -1,3 +1,4 @@
+import Head from "next/head";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { WagmiProvider, createConfig, http } from "wagmi";
@@ -46,6 +47,22 @@ function MyApp({ Component, pageProps }: AppProps) {
         <WagmiProvider config={config}>
           <QueryClientProvider client={queryClient}>
             <ConnectKitProvider>
+              <Head>
+                <title>DUEL3</title>
+                <meta property="og:title" content="DUEL3" />
+                <meta
+                  property="og:description"
+                  content="DUEL3 is an onchain card game with infinite scalability. It's your turn!"
+                />
+                <meta property="og:image" content="/duel3-ogp.png" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="DUEL3" />
+                <meta
+                  name="twitter:description"
+                  content="DUEL3 is an onchain card game with infinite scalability. It's your turn!"
+                />
+                <meta name="twitter:image" content="/duel3-ogp.png" />
+              </Head>
               <Component {...pageProps} />
             </ConnectKitProvider>
           </QueryClientProvider>
