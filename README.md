@@ -4,7 +4,7 @@
 
 DUEL3 is an onchain card game where you battle using your own unique and precious cards.
 
-## What is the DUEL3?
+## What is DUEL3?
 
 DUEL3 is an onchain card game that leverages the unique "own" feature of blockchain, providing an experience where you can battle with your favorite cards just like in analog card games.
 
@@ -42,11 +42,11 @@ Deep Dive into the Hybrid Game https://paragraph.xyz/@duel3/deep-dive-into-hybri
 
 DUEL3 battle
 
-[https://basescan.org/address/0x37f6c278888e3a826a7341727d06c062c67dea1a](https://basescan.org/address/0x37f6c278888e3a826a7341727d06c062c67dea1a)
+[https://arbiscan.io/address/0x4fe3fc701504ac72bff774e42e78fb349607de56](https://arbiscan.io/address/0x4fe3fc701504ac72bff774e42e78fb349607de56)
 
 DUEL3 NFT
 
-
+[https://arbiscan.io/address/0x053cb170062bb18a0071aceea923fa377b8bc321](https://arbiscan.io/address/0x053cb170062bb18a0071aceea923fa377b8bc321)
 
 ## Contract Deployment
 
