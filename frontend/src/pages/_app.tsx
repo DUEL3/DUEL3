@@ -54,14 +54,14 @@ function MyApp({ Component, pageProps }: AppProps) {
                   property="og:description"
                   content="DUEL3 is an onchain card game with infinite scalability. It's your turn!"
                 />
-                <meta property="og:image" content="/duel3-ogp.png" />
+                <meta property="og:image" content="https://duel3.vercel.app/duel3-ogp.png" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="DUEL3" />
                 <meta
                   name="twitter:description"
                   content="DUEL3 is an onchain card game with infinite scalability. It's your turn!"
                 />
-                <meta name="twitter:image" content="/duel3-ogp.png" />
+                <meta name="twitter:image" content="https://duel3.vercel.app/duel3-ogp.png" />
               </Head>
               <Component {...pageProps} />
             </ConnectKitProvider>
