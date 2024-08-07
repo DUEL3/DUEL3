@@ -1,6 +1,6 @@
 # DUEL3
 
-![DUEL3_x_cover](https://github.com/user-attachments/assets/0e3924b8-dd07-4732-bfd9-4c370df96554)
+![DUEL3_x_cover](https://duel3.vercel.app/public/duel3-ogp.png)
 
 DUEL3 is an onchain card game where you battle using your own unique and precious cards.
 
