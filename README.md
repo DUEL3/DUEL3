@@ -1,6 +1,6 @@
 # DUEL3
 
-![DUEL3_x_cover](https://duel3.vercel.app/public/duel3-ogp.png)
+![DUEL3_x_cover](https://duel3.vercel.app/duel3-ogp.png)
 
 DUEL3 is an onchain card game where you battle using your own unique and precious cards.
 
@@ -32,7 +32,7 @@ The hybrid game we propose records only specific data onchain: the state at the 
 
 All game logic is executed offchain, with the game intermediate state during battle also maintained offchain. The game logic should remain open and transparent to ensure fairness and verifiability.
 
-<img width="791" alt="plasma_architecture_overview2" src="https://github.com/user-attachments/assets/bf93582f-2b12-4f6a-be9c-1194423c4c6c">
+![DUEL3_x_cover](https://duel3.vercel.app/duel3-ogp.png)
 
 For more details, please check the article below:
 
