@@ -59,7 +59,7 @@ export const units: { [key: number]: Unit } = {
     name: "Balrog",
     imagePath: "1007",
     attack: 3,
-    life: 4,
+    life: 3,
     description:
       "At the start of a battle, deal 1 damage to two random enemies.",
     skillIds: [9],

@@ -243,7 +243,8 @@ export default class PhaserBattleScene extends Phaser.Scene {
     this.tooltipText = [
       this.add.text(72, 60, "", _tooltipStyle).setVisible(false),
       this.add.text(72, 100, "", _tooltipStyle).setVisible(false),
-      this.add.text(72, 140, "", _tooltipStyle).setVisible(false),
+      this.add.text(72, 150, "", _tooltipStyle).setVisible(false),
+      this.add.text(72, 190, "", _tooltipStyle).setVisible(false),
     ];
     this.events.on("show-tooltip", this.showTooltip, this);
     this.events.on("hide-tooltip", this.hideTooltip, this);
@@ -306,8 +307,24 @@ export default class PhaserBattleScene extends Phaser.Scene {
   ): void {
     this.tooltip.setVisible(true);
     this.tooltipText[0].setText(name).setVisible(true);
-    this.tooltipText[1].setText(`${attack}/${life}`).setVisible(true);
+    this.tooltipText[1]
+      .setText(`Attack: ${attack} Life: ${life}`)
+      .setVisible(true);
     this.tooltipText[2].setText(description).setVisible(true);
+
+    const wrap_len = 40;
+    if (description.length > wrap_len) {
+      const spaceIndex = description.lastIndexOf(" ", wrap_len);
+      const splitIndex = spaceIndex > -1 ? spaceIndex : wrap_len;
+
+      const firstPart = description.slice(0, splitIndex);
+      const secondPart = description.slice(splitIndex + 1); // Skip the space
+
+      this.tooltipText[2].setText(firstPart).setVisible(true);
+      this.tooltipText[3].setText(secondPart).setVisible(true);
+    } else {
+      this.tooltipText[2].setText(description).setVisible(true);
+    }
   }
 
   private hideTooltip(): void {

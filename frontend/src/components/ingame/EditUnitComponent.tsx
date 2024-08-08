@@ -54,7 +54,7 @@ const EditUnitComponent = ({
           <div className="py-2 px-3 text-lg">
             <p className="">{units[unitId].name}</p>
             <p className="">
-              {units[unitId].attack}/{units[unitId].life}
+              Attack: {units[unitId].attack} Life: {units[unitId].life}
             </p>
             <p className="leading-tight">{units[unitId].description}</p>
           </div>
@@ -70,6 +70,7 @@ const EditUnitComponent = ({
                 width: "160px",
                 height: "204px",
               }}
+              className={!isSub && index === 2 ? "tutorial-move-sub-unit2" : ""}
             >
               <Image
                 src={`/images/cards/empty.png`}
@@ -100,9 +101,9 @@ const EditUnitComponent = ({
                 isSub && index === 0
                   ? "tutorial-move-sub-unit"
                   : !isSub && index === 1
-                    ? "tutorial-start"
-                    : !isSub && index === 3
-                      ? "tutorial-reverse-unit"
+                    ? "tutorial-reverse-unit"
+                    : !isSub && index === 2
+                      ? "tutorial-reverse-unit2"
                       : ""
               }
             >

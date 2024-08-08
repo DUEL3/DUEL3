@@ -44,6 +44,7 @@ const OverScenes = ({
   const [resultPhase, setResultPhase] = useState<RESULT_PHASE>(
     RESULT_PHASE.LOSE
   );
+  const [showTooltip, setShowTooltip] = useState(false);
 
   /**============================
  * useReadContract
@@ -117,6 +118,77 @@ const OverScenes = ({
     return resultPhase === RESULT_PHASE.WIN ? "Win!" : "Lose...";
   };
 
+  //Called from renderResultImage
+  const _renderNewUnit = (unitId: number) => {
+    const handleMouseEnter = () => {
+      setShowTooltip(true);
+    };
+    const handleMouseLeave = () => {
+      setShowTooltip(false);
+    };
+    return (
+      <>
+        {showTooltip && (
+          <div
+            className="absolute top-24 left-8 z-10"
+            style={{
+              width: "300px",
+              height: "120px",
+              backgroundImage: `url('/images/battle/tooltip.png')`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <div className="py-2 px-3 text-lg">
+              <p className="">{units[unitId].name}</p>
+              <p className="">
+                Attack: {units[unitId].attack} Life: {units[unitId].life}
+              </p>
+              <p className="leading-tight">{units[unitId].description}</p>
+            </div>
+          </div>
+        )}
+        <div
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          style={{
+            width: "260px",
+            height: "330px",
+          }}
+        >
+          <Image
+            src={`/images/cards/${units[unitId].imagePath}.png`}
+            alt=""
+            width={260}
+            height={330}
+          />
+        </div>
+        <div className="flex justify-between">
+          <div className="w-11 relative" style={{ top: "3px", left: "10px" }}>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <Image
+                src={`/images/common/numbers/${units[unitId].attack}.png`}
+                alt=""
+                width={204}
+                height={306}
+              />
+            </div>
+          </div>
+          <div className="w-11 relative" style={{ top: "3px", right: "9px" }}>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <Image
+                src={`/images/common/numbers/${units[unitId].life}.png`}
+                alt=""
+                width={204}
+                height={306}
+              />
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  };
+
   const renderResultImage = () => {
     if (resultPhase === RESULT_PHASE.LOSE) {
       return (
@@ -133,7 +205,7 @@ const OverScenes = ({
     ) {
       if (dataNewUnit && Number(dataNewUnit) > 0) {
         //Get new unit
-        return renderNewUnit(Number(dataNewUnit));
+        return _renderNewUnit(Number(dataNewUnit));
       } else {
         return (
           <Image
@@ -162,55 +234,12 @@ const OverScenes = ({
 
         return (
           <>
-            <Image src={_image} alt="" width={200} height={200} />
+            <Image src={_image} alt="" width={240} height={240} />
           </>
         );
       }
       return <>Invalid Token URI</>;
     }
-  };
-
-  //Called from renderResultImage
-  const renderNewUnit = (unitId: number) => {
-    return (
-      <>
-        <div
-          style={{
-            width: "200px",
-            height: "255px",
-          }}
-        >
-          <Image
-            src={`/images/cards/${units[unitId].imagePath}.png`}
-            alt=""
-            width={200}
-            height={255}
-          />
-        </div>
-        <div className="flex justify-between">
-          <div className="w-8 relative" style={{ top: "2px", left: "9px" }}>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <Image
-                src={`/images/common/numbers/${units[unitId].attack}.png`}
-                alt=""
-                width={160}
-                height={204}
-              />
-            </div>
-          </div>
-          <div className="w-8 relative" style={{ top: "2px", right: "8px" }}>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <Image
-                src={`/images/common/numbers/${units[unitId].life}.png`}
-                alt=""
-                width={160}
-                height={204}
-              />
-            </div>
-          </div>
-        </div>
-      </>
-    );
   };
 
   const renderButton = () => {
@@ -227,7 +256,6 @@ const OverScenes = ({
       );
     }
 
-    //TODO share button
     if (resultPhase === RESULT_PHASE.MINTED) {
       //OpenSea URL
       const linkToOpenSea = () => {
@@ -294,7 +322,7 @@ const OverScenes = ({
     <div className="flex flex-col items-center m-auto">
       <main className="flex flex-col" style={{ width: "1080px" }}>
         <section className="mt-8">
-          <div className="flex justify-center p-4">
+          <div className="flex justify-center">
             <div className="m-2 mx-6 text-8xl font-bold">
               {renderResultText()}
             </div>
@@ -302,7 +330,7 @@ const OverScenes = ({
         </section>
         <section className="">
           <div className="flex justify-center">
-            <div className="mt-8 mb-8">{renderResultImage()}</div>
+            <div className="mt-4 mb-4">{renderResultImage()}</div>
           </div>
         </section>
         <section className="mt-16 mb-8">
