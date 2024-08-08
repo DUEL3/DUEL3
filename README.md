@@ -32,7 +32,7 @@ The hybrid game we propose records only specific data onchain: the state at the 
 
 All game logic is executed offchain, with the game intermediate state during battle also maintained offchain. The game logic should remain open and transparent to ensure fairness and verifiability.
 
-![DUEL3_x_cover](https://duel3.vercel.app/duel3-ogp.png)
+![plasma_architecture_overview](https://duel3.vercel.app/plasma_architecture_overview2.png)
 
 For more details, please check the article below:
 
